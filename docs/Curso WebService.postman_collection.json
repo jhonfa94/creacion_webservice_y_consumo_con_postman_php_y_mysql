@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "ed7e0fd1-68f3-4162-b0b7-ba1de27a98ad",
+		"name": "Curso WebService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost/PersonalWebServicePostman/controller/CategoriaController.php?op=GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PersonalWebServicePostman",
+						"controller",
+						"CategoriaController.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "GetAll"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar por ID categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"cat_id\": 5\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/PersonalWebServicePostman/controller/CategoriaController.php?op=GetId",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PersonalWebServicePostman",
+						"controller",
+						"CategoriaController.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "GetId"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cat_nom\" : \"wasjdflk\",\r\n    \"cat_obs\" : \"alsdfjaslkdfjñ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/PersonalWebServicePostman/controller/CategoriaController.php?op=Insert",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PersonalWebServicePostman",
+						"controller",
+						"CategoriaController.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "Insert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cat_nom\" : \"Computadores\",\r\n    \"cat_obs\" : \"Computadores en actualizacion\",\r\n    \"est\" : 1, \r\n    \"cat_id\" : 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/PersonalWebServicePostman/controller/CategoriaController.php?op=Update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PersonalWebServicePostman",
+						"controller",
+						"CategoriaController.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "Update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"cat_id\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/PersonalWebServicePostman/controller/CategoriaController.php?op=Delete",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"PersonalWebServicePostman",
+						"controller",
+						"CategoriaController.php"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "Delete"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
